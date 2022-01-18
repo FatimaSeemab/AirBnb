@@ -5,7 +5,7 @@ import SmallCard from '../components/SmallCard'
 import MediumCard from '../components/MediumCard'
 import LargeCard from '../components/LargeCard'
 import Footer from '../components/Footer'
-export default function Home({exploreData,cardsData}) {
+export default function Home({exploreData,cardsData}:{exploreData:any,cardsData:any}) {
 
   return (
     <div className="">
@@ -19,7 +19,7 @@ export default function Home({exploreData,cardsData}) {
         <section className='pt-6'>
           <h2 className='text-4xl font-semibold pb-5'>Explore Nearby</h2>
           <div className='grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
-            {exploreData?.map(({img,distance,location})=>(
+            {exploreData?.map(({img,distance,location}:{img:any,distance:any,location:any})=>(
             <SmallCard key={img} img={img} distance={distance} location={location}/>
           ))}
           </div>
@@ -31,7 +31,7 @@ export default function Home({exploreData,cardsData}) {
           </h2>
           <div className='flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3'>
           {
-            cardsData.map(({img,title})=>(
+            cardsData.map(({img,title}:{img:any,title:any})=>(
             <MediumCard key={img} img={img} title={title}/>
              ))
           }

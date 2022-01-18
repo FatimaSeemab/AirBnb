@@ -19,7 +19,7 @@ export default function Home({exploreData,cardsData}) {
         <section className='pt-6'>
           <h2 className='text-4xl font-semibold pb-5'>Explore Nearby</h2>
           <div className='grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
-            {exploreData?.map(({img,distance,location})=>(
+            {exploreData?.map(({img:any,distance:any,location:any})=>(
             <SmallCard key={img} img={img} distance={distance} location={location}/>
           ))}
           </div>
@@ -31,7 +31,7 @@ export default function Home({exploreData,cardsData}) {
           </h2>
           <div className='flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3'>
           {
-            cardsData.map(({img,title})=>(
+            cardsData.map(({img:any,title:any})=>(
             <MediumCard key={img} img={img} title={title}/>
              ))
           }

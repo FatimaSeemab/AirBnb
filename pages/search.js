@@ -1,8 +1,10 @@
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import InfoCard from "../components/InfoCard"
-import { useRouter } from "next/router"
-import {format} from "date-fns"
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import InfoCard from "../components/InfoCard";
+import Map from "../components/Map";
+import { useRouter } from "next/router";
+import {format} from "date-fns";
+import getCenter from "geolib/es/getCenter";
 
 function Search({searchResults}) {
     const router=useRouter();
@@ -54,6 +56,11 @@ function Search({searchResults}) {
                     ))}
                     </div>
   
+                    </section>
+                    <section className="hidden
+                     md:inline-flex md:min-w-[600px]"
+                    > 
+                        <Map searchResults={searchResults}/>
                     </section>
                 </main>
             <Footer />

@@ -1,10 +1,13 @@
-In this project, I am to clone the front end of Airbnb.
-## Goal:
-The goal of this project is to learn the next JS with a tailwind and hands-on experience.
-In this app development, I get a chance to practice designing headers, and foot several cards of different sizes. Furthermore, integrated dynamic calendar allows you to choose a range of dates.
 
-## CREDITS:
-I followed a 5-day coding challenge on YouTube to clone this website.
+## Project Description:
 
-## DEPLOYMENT 
-I have deployed this app on Vercel, loading it might take some time
+Welcome to my Airbnb front-end clone project! The primary objective of this project is to learn in the realm of Next.js while harnessing the power of Tailwind CSS, all through hands-on experience. Throughout this journey, I've had the opportunity to craft various elements such as headers, footers, and cards of diverse sizes. Additionally, I've integrated a dynamic calendar feature, empowering users to select date ranges seamlessly.
+
+## Acknowledgements:
+
+I owe credit to a comprehensive 5-day coding challenge hosted on YouTube, which served as my guiding light throughout this endeavor. It provided invaluable insights and frameworks, enabling me to meticulously replicate the Airbnb website's front end.
+
+## Deployment:
+
+The culmination of my efforts is now live on Vercel! Do note that the initial loading may take a moment, but I assure you, it's worth the wait.
+
